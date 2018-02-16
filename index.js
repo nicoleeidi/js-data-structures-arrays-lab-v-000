@@ -7,11 +7,11 @@ function destructivelyPrependDriver(name){
   drivers.unshift(name)
 }
 function destructivelyRemoveLastDriver(){
-  drivers.pop
-  return drivers 
+  drivers.pop()
+  return drivers
 }
 function destructivelyRemoveFirstDriver(){
-  drivers.shift
+  drivers.shift()
   return drivers
 }
 function appendDriver(name){
@@ -28,5 +28,5 @@ function removeLastDriver(){
 }
 function removeFirstDriver(){
   let newdrivers= drivers.slice(0,1)
-  return newdrivers 
+  return newdrivers
 }
